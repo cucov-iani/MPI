@@ -1,0 +1,169 @@
+Elements,Runs,Algorithm,Variant,Elapsed time(ms)
+1000,10000,quick sort,reversed,0.070183590
+1000,10000,quick sort,random,0.105760450
+1000,10000,quick sort,partially sorted 10%,0.071576270
+1000,10000,quick sort,partially sorted 30%,0.056466760
+1000,10000,quick sort,partially sorted 50%,0.054997620
+1000,10000,quick sort,partially sorted 70%,0.058145060
+1000,10000,quick sort,partially sorted 90%,0.059008690
+
+10000,100,quick sort,reversed,0.985096000
+10000,100,quick sort,random,1.643057000
+10000,100,quick sort,partially sorted 10%,1.037354000
+10000,100,quick sort,partially sorted 30%,0.801616000
+10000,100,quick sort,partially sorted 50%,0.862384000
+10000,100,quick sort,partially sorted 70%,0.877078000
+10000,100,quick sort,partially sorted 90%,0.887656000
+
+100000,10,quick sort,reversed,10.814790000
+100000,10,quick sort,random,17.829920000
+100000,10,quick sort,partially sorted 10%,7.444640000
+100000,10,quick sort,partially sorted 30%,9.067950000
+100000,10,quick sort,partially sorted 50%,6.473890000
+100000,10,quick sort,partially sorted 70%,5.994420000
+100000,10,quick sort,partially sorted 90%,8.198890000
+
+1000000,1,quick sort,reversed,140.477000000
+1000000,1,quick sort,random,273.876300000
+1000000,1,quick sort,partially sorted 10%,74.159700000
+1000000,1,quick sort,partially sorted 30%,74.161400000
+1000000,1,quick sort,partially sorted 50%,116.284200000
+1000000,1,quick sort,partially sorted 70%,55.150300000
+1000000,1,quick sort,partially sorted 90%,57.290600000
+
+100000,10,radix sort,reversed,6.341700000
+100000,10,radix sort,random,5.506550000
+100000,10,radix sort,partially sorted 10%,5.844950000
+100000,10,radix sort,partially sorted 30%,7.808630000
+100000,10,radix sort,partially sorted 50%,7.456850000
+100000,10,radix sort,partially sorted 70%,6.963870000
+100000,10,radix sort,partially sorted 90%,7.730700000
+
+1000000,1,radix sort,reversed,75.438100000
+1000000,1,radix sort,random,63.979900000
+1000000,1,radix sort,partially sorted 10%,76.167300000
+1000000,1,radix sort,partially sorted 30%,129.390600000
+1000000,1,radix sort,partially sorted 50%,86.713000000
+1000000,1,radix sort,partially sorted 70%,76.479600000
+1000000,1,radix sort,partially sorted 90%,73.946400000
+
+----------------------------------------------------
+QUICK SORT VS RADIX SORT
+
+For 100,000:
+
+-quick sort is faster on several partially sorted variants
+-radix sort is faster on reversed and random
+-overall: mixed, but radix sort is very competitive
+
+For 1,000,000:
+
+-reversed: radix (75.4381 ms) beats quick (140.4770 ms)
+-random: radix (63.9799 ms) crushes quick (273.8763 ms)
+-partially sorted 10%: quick (74.1597 ms) slightly beats radix (76.1673 ms)
+-partially sorted 30%: quick (74.1614 ms) beats radix (129.3906 ms)
+-partially sorted 50%: radix (86.7130 ms) beats quick (116.2842 ms)
+-partially sorted 70%: quick (55.1503 ms) beats radix (76.4796 ms)
+-partially sorted 90%: quick (57.2906 ms) beats radix (73.9464 ms)
+--------------------------------------------------------
+
+10,1000000,radix sort,reversed,0.000305111
+10,1000000,radix sort,random,0.000451274
+10,1000000,radix sort,partially sorted 10%,0.000266282
+10,1000000,radix sort,partially sorted 30%,0.000297404
+10,1000000,radix sort,partially sorted 50%,0.000324186
+10,1000000,radix sort,partially sorted 70%,0.000285333
+10,1000000,radix sort,partially sorted 90%,0.000297050
+
+50,1000000,radix sort,reversed,0.001444599
+50,1000000,radix sort,random,0.001663583
+50,1000000,radix sort,partially sorted 10%,0.001548902
+50,1000000,radix sort,partially sorted 30%,0.001653707
+50,1000000,radix sort,partially sorted 50%,0.001515914
+50,1000000,radix sort,partially sorted 70%,0.001496551
+50,1000000,radix sort,partially sorted 90%,0.001574809
+
+100,1000000,radix sort,reversed,0.002529787
+100,1000000,radix sort,random,0.003447623
+100,1000000,radix sort,partially sorted 10%,0.002774574
+100,1000000,radix sort,partially sorted 30%,0.002687902
+100,1000000,radix sort,partially sorted 50%,0.002974887
+100,1000000,radix sort,partially sorted 70%,0.002949278
+100,1000000,radix sort,partially sorted 90%,0.002708283
+
+10,1000000,merge sort,reversed,0.001223332
+10,1000000,merge sort,random,0.001485836
+10,1000000,merge sort,partially sorted 10%,0.001203668
+10,1000000,merge sort,partially sorted 30%,0.001264673
+10,1000000,merge sort,partially sorted 50%,0.001289336
+10,1000000,merge sort,partially sorted 70%,0.001241676
+10,1000000,merge sort,partially sorted 90%,0.001206091
+
+50,1000000,merge sort,reversed,0.007038623
+50,1000000,merge sort,random,0.008486429
+50,1000000,merge sort,partially sorted 10%,0.007287576
+50,1000000,merge sort,partially sorted 30%,0.006569994
+50,1000000,merge sort,partially sorted 50%,0.006928035
+50,1000000,merge sort,partially sorted 70%,0.006572877
+50,1000000,merge sort,partially sorted 90%,0.006804143
+
+100,1000000,merge sort,reversed,0.014117476
+100,1000000,merge sort,random,0.019154877
+100,1000000,merge sort,partially sorted 10%,0.015615796
+100,1000000,merge sort,partially sorted 30%,0.014533929
+100,1000000,merge sort,partially sorted 50%,0.014552890
+100,1000000,merge sort,partially sorted 70%,0.013693241
+100,1000000,merge sort,partially sorted 90%,0.013601587
+
+
+--------------------------------------------------------
+For 10:
+
+reversed: radix (0.000305111 ms) beats merge (0.001223332 ms)
+random: radix (0.000451274 ms) beats merge (0.001485836 ms)
+partially sorted 10%: radix (0.000266282 ms) beats merge (0.001203668 ms)
+partially sorted 30%: radix (0.000297404 ms) beats merge (0.001264673 ms)
+partially sorted 50%: radix (0.000324186 ms) beats merge (0.001289336 ms)
+partially sorted 70%: radix (0.000285333 ms) beats merge (0.001241676 ms)
+partially sorted 90%: radix (0.000297050 ms) beats merge (0.001206091 ms)
+
+For 50:
+
+reversed: radix (0.001444599 ms) beats merge (0.007038623 ms)
+random: radix (0.001663583 ms) beats merge (0.008486429 ms)
+partially sorted 10%: radix (0.001548902 ms) beats merge (0.007287576 ms)
+partially sorted 30%: radix (0.001653707 ms) beats merge (0.006569994 ms)
+partially sorted 50%: radix (0.001515914 ms) beats merge (0.006928035 ms)
+partially sorted 70%: radix (0.001496551 ms) beats merge (0.006572877 ms)
+partially sorted 90%: radix (0.001574809 ms) beats merge (0.006804143 ms)
+
+For 100:
+
+reversed: radix (0.002529787 ms) beats merge (0.014117476 ms)
+random: radix (0.003447623 ms) beats merge (0.019154877 ms)
+partially sorted 10%: radix (0.002774574 ms) beats merge (0.015615796 ms)
+partially sorted 30%: radix (0.002687902 ms) beats merge (0.014533929 ms)
+partially sorted 50%: radix (0.002974887 ms) beats merge (0.014552890 ms)
+partially sorted 70%: radix (0.002949278 ms) beats merge (0.013693241 ms)
+partially sorted 90%: radix (0.002708283 ms) beats merge (0.013601587 ms)
+
+For 100,000:
+
+reversed: radix (6.341700000 ms) beats quick (10.814790000 ms)
+random: radix (5.506550000 ms) beats quick (17.829920000 ms)
+partially sorted 10%: radix (5.844950000 ms) beats quick (7.444640000 ms)
+partially sorted 30%: radix (7.808630000 ms) beats quick (9.067950000 ms)
+partially sorted 50%: radix (7.456850000 ms) beats quick (6.473890000 ms)
+partially sorted 70%: radix (6.963870000 ms) beats quick (5.994420000 ms)
+partially sorted 90%: radix (7.730700000 ms) beats quick (8.198890000 ms)
+
+For 1,000,000:
+
+reversed: radix (75.4381 ms) beats quick (140.4770 ms)
+random: radix (63.9799 ms) crushes quick (273.8763 ms)
+partially sorted 10%: quick (74.1597 ms) slightly beats radix (76.1673 ms)
+partially sorted 30%: quick (74.1614 ms) beats radix (129.3906 ms)
+partially sorted 50%: radix (86.7130 ms) beats quick (116.2842 ms)
+partially sorted 70%: quick (55.1503 ms) beats radix (76.4796 ms)
+partially sorted 90%: quick (57.2906 ms) beats radix (73.9464 ms)
+--------------------------------------------------------
