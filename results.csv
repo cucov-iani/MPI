@@ -47,26 +47,6 @@ Elements,Runs,Algorithm,Variant,Elapsed time(ms)
 1000000,1,radix sort,partially sorted 70%,76.479600000
 1000000,1,radix sort,partially sorted 90%,73.946400000
 
-----------------------------------------------------
-QUICK SORT VS RADIX SORT
-
-For 100,000:
-
--quick sort is faster on several partially sorted variants
--radix sort is faster on reversed and random
--overall: mixed, but radix sort is very competitive
-
-For 1,000,000:
-
--reversed: radix (75.4381 ms) beats quick (140.4770 ms)
--random: radix (63.9799 ms) crushes quick (273.8763 ms)
--partially sorted 10%: quick (74.1597 ms) slightly beats radix (76.1673 ms)
--partially sorted 30%: quick (74.1614 ms) beats radix (129.3906 ms)
--partially sorted 50%: radix (86.7130 ms) beats quick (116.2842 ms)
--partially sorted 70%: quick (55.1503 ms) beats radix (76.4796 ms)
--partially sorted 90%: quick (57.2906 ms) beats radix (73.9464 ms)
---------------------------------------------------------
-
 10,1000000,radix sort,reversed,0.000305111
 10,1000000,radix sort,random,0.000451274
 10,1000000,radix sort,partially sorted 10%,0.000266282
@@ -117,6 +97,8 @@ For 1,000,000:
 
 
 --------------------------------------------------------
+QUICK SORT VS RADIX SORT
+
 For 10:
 
 reversed: radix (0.000305111 ms) beats merge (0.001223332 ms)
